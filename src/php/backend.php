@@ -15,11 +15,11 @@
             <div class="login__title">Пожалуйста авторизуйтесь</div>
                 <form action="" method="POST" class="login__form">
                         <div class="login__input login__name">
-                        <input placeholder="example" name="name" type="text">
+                        <input placeholder="example" name="name" type="text" required>
                             <label for="name">Логин</label>  
                         </div>
                         <div class="login__input login__password">
-                        <input placeholder="*******" name="password" type="text">
+                        <input placeholder="*******" name="password" type="text" required>
                             <label for="password">Пароль</label>
                         </div>
                         <button class="btn">Авторизоваться</button>
