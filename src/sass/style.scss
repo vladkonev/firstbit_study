@@ -1,0 +1,14 @@
+@import 'base/mixins';
+@import 'base/variables';
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+@import 'blocks/buttons';
+@import 'blocks/login';

@@ -1,0 +1,13 @@
+.login__name input {
+    border: 2px solid red;
+}
+.login__name label {
+    color:red;
+}
+
+.login__password input {
+    border: 2px solid rgb(0, 0, 0);
+}
+.login__password label {
+    color:rgb(0, 0, 0);
+}
