@@ -1,8 +1,8 @@
 .login__password input {
-    border: 2px solid red;
+    border: 2px solid rgb(0, 0, 0);
 }
 .login__password label {
-    color:red;
+    color:rgb(0, 0, 0);
 }
 
 .login__name input {

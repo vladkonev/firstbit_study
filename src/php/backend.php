@@ -19,7 +19,7 @@
                             <label for="name">Логин</label>  
                         </div>
                         <div class="login__input login__password">
-                        <input placeholder="*******" name="password" type="text" required>
+                        <input placeholder="*******" name="password" type="password" required>
                             <label for="password">Пароль</label>
                         </div>
                         <button class="btn">Авторизоваться</button>
@@ -38,22 +38,13 @@
 
 
 
-    
     if($_POST['name'] == User::NAME && $_POST['password'] == User::PASS) {
         echo '<h2 class="login__error">' . 'Вы авторизованы ' . $_POST['name'] . '</h2>';
+    } else {
+    {
+        echo '<link rel="stylesheet" href="../sass/blocks/_link_name.css">'  .  '<h2 class="login__error">' .  'Не верный логин или пароль'  .  '</h2>' ;
     }
-
-    if($_POST['name'] !== User::NAME && $_POST['password'] == User::PASS) {
-        echo '<link rel="stylesheet" href="../sass/blocks/_link_name.css">' . '<h2 class="login__error">' . 'Пользователь не найден' . '</h2>' ;
-    }
-
-    if($_POST['name'] == User::NAME && $_POST['password'] !== User::PASS) {
-        echo '<link rel="stylesheet" href="../sass/blocks/_link_pass.css">' . '<h2 class="login__error">' . 'Не правильно введён пароль' . '</h2>' ;
-    }
-
-    if($_POST['name'] !== User::NAME && $_POST['password'] !== User::PASS) {
-        echo '<link rel="stylesheet" href="../sass/blocks/_link_name.css">' . '<h2 class="login__error">' . 'Пользователь не найден' . '</h2>' ;
-    }
+}
 
 ?>
 
